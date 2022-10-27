@@ -1,0 +1,25 @@
+<h3>
+    Creating Subject object 
+</h3>
+
+<br>
+
+<button (click)="subscribe()">Subscribe</button>
+<button (click)="unsubscribe()">Unsubscribe</button>
+<br>
+<div class="flex">
+    <div>
+        <ul>
+            <li *ngFor="let item of data1">
+                {{ item }}
+            </li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li *ngFor="let item of data2">
+                {{ item }}
+            </li>
+        </ul>
+    </div>
+</div>

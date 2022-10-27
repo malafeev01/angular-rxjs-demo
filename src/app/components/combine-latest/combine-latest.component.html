@@ -1,0 +1,13 @@
+<h3>
+    Creating Observable object with combineLatest() and tap() functions 
+</h3>
+
+<br>
+
+<button (click)="subscribeLatest()">Subscribe latest</button>
+<button (click)="unsubscribeLatest()">Unsubscribe latest</button>
+<ul>
+    <li *ngFor="let item of itemsLatest">
+        {{ item }}
+    </li>
+</ul>

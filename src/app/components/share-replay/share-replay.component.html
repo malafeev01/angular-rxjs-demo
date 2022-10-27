@@ -1,0 +1,33 @@
+<h3>
+    Creating simple Observable object with shareReplay(3) and map() pipe's functions
+</h3>
+<br>
+<button (click)="subscribe()">Subscribe first</button>
+<button (click)="unsubscribe()">Unsubscribe first</button>
+
+<button (click)="subscribeSecond()">Subscribe second</button>
+<button (click)="unsubscribeSecond()">Unsubscribe second</button>
+<button (click)="stop()">Stop it!</button>
+<button (click)="clean()">Clean</button>
+<br>
+<br>
+
+<div>State: {{ state }}</div>
+<br>
+<br>
+<div class="flex">
+    <div>
+        <ul>
+            <li *ngFor="let item of items">
+                {{ item }}
+            </li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li *ngFor="let item of itemsSecond">
+                {{ item }}
+            </li>
+        </ul>
+    </div>
+</div>
